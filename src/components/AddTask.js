@@ -32,7 +32,7 @@ const AddTask = ({viewToggle,addTask}) => {
         </div>
         <div className='form-control form-checked'>
             <label>Set Reminder </label>
-            <input type='checkbox' value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}></input>
+            <input type='checkbox' checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}></input>
         </div>
         <button type='submit' className='btn btn-save'>Save Task</button>
     </form>
